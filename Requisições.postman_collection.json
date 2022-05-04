@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "edb4e674-9f86-49bb-af49-763aa4b32185",
+		"name": "asdada",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Retornando um Alimento",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"alimento\": null\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/dispensa/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dispensa",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retornando todos os Alimentos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"João\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/dispensa",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dispensa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar um novo Alimentos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"alimento\": \"Banana\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/dispensa",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dispensa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar um Alimentos",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"alimento\": \"Uasda\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/dispensa/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dispensa",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletando um alimento",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"João\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/dispensa/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dispensa",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
